@@ -1,7 +1,6 @@
 import '../init/theme/custom_text_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:provider/provider.dart';
 
 class AppExt {}
 
@@ -161,8 +160,20 @@ extension ThemeExtension on BuildContext {
 
   bool get isDarkMode => Theme.of(this).brightness == Brightness.dark;
 
-  Color get primaryColor => const Color(0xFF138A31);
+  Color get primaryColor => const Color(0xffffb6c1);
   Color get secondaryColor => const Color(0xFFECEEF5);
+
+  Color get pinkColor => const Color(0XFFF65A8A);
+  Color get pinkSecondaryColor => const Color(0XFFFF8DAF);
+  Color get blueColor => const Color(0XFF927BFB);
+  Color get blueSecondaryColor => const Color(0XFFAA95F5);
+  Color get orangeColor => const Color(0XFFFFAB46);
+  Color get orangeSecondaryColor => const Color(0XFFFFC179);
+  Color get aquaColor => const Color(0XFF4BC9EC);
+  Color get aquaSecondaryColor => const Color(0XFF85E3FC);
+  Color get softPink => const Color(0xffFFB8BF);
+  Color get greyColor => Colors.black26;
+  Color get white => Colors.white;
 
   Color get softGreen => const Color(0xffe6f2e8);
   Color get waterloo => const Color(0XFF7f83a3);

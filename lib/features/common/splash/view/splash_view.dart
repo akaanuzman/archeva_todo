@@ -21,15 +21,10 @@ class SplashView extends StatelessWidget {
       );
 
   Center _bodyView(BuildContext context) => Center(
-        child: _containerImageView(context),
-      );
-
-  Container _containerImageView(BuildContext context) => Container(
-        height: context.height,
-        width: context.width,
-        decoration: const BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage("assets/images/logo.png"),
+        child: Text(
+          "Archeva Todo",
+          style: context.textTheme.headline3!.copyWith(
+            color: context.waterloo
           ),
         ),
       );

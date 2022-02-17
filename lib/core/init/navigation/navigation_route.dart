@@ -1,4 +1,5 @@
-import '../../../presentation/common/onboard/view/on_board_view.dart';
+import '../../../features/tabbar/view/tabbar_view.dart';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart' show Scaffold;
 
@@ -11,8 +12,8 @@ class NavigationRoute {
     switch (settings.name) {
       case MyApp.path:
         return CupertinoPageRoute(builder: (_) => const MyApp());
-      case OnBoardView.path:
-        return CupertinoPageRoute(builder: (_) => const OnBoardView());
+      case TabbarView.path:
+        return CupertinoPageRoute(builder: (_) => TabbarView());
 
       default:
         return CupertinoPageRoute(

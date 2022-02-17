@@ -1,9 +1,10 @@
 import 'dart:async';
 
+import '../../../tabbar/view/tabbar_view.dart';
+
 import '../../../../core/base/viewmodel/base_view_model.dart';
 import '../../../../core/extension/app_extensions.dart';
 import '../../../../core/init/navigation/navigation_service.dart';
-import '../../onboard/view/on_board_view.dart';
 
 class SplashViewModel extends BaseViewModel {
   @override
@@ -11,5 +12,5 @@ class SplashViewModel extends BaseViewModel {
     Timer(context.durationNormal, goToOnBoard);
   }
 
-  void goToOnBoard() => NavigationService.pushNamed(OnBoardView.path);
+  void goToOnBoard() => NavigationService.pushNamed(TabbarView.path);
 }
