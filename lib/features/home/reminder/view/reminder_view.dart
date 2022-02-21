@@ -1,8 +1,8 @@
 import 'package:animate_do/animate_do.dart';
-import 'package:archeva_todo/core/base/view/base_view.dart';
-import 'package:archeva_todo/core/extension/app_extensions.dart';
-import 'package:archeva_todo/features/home/reminder/viewmodel/reminder_view_model.dart';
-import 'package:archeva_todo/product/components/text/custom/custom_headline6.dart';
+import '../../../../core/base/view/base_view.dart';
+import '../../../../core/extension/app_extensions.dart';
+import '../viewmodel/reminder_view_model.dart';
+import '../../../../product/components/text/custom/custom_headline6.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

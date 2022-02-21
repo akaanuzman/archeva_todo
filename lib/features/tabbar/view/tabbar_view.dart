@@ -1,6 +1,6 @@
-import 'package:archeva_todo/features/home/archive/view/archive_view.dart';
-import 'package:archeva_todo/features/home/done/view/done_view.dart';
-import 'package:archeva_todo/features/home/reminder/view/reminder_view.dart';
+import '../../home/archive/view/archive_view.dart';
+import '../../home/done/view/done_view.dart';
+import '../../home/reminder/view/reminder_view.dart';
 
 import '../../home/view/home_view.dart';
 import '../../../core/extension/app_extensions.dart';

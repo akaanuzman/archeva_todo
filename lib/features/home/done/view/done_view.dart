@@ -1,15 +1,13 @@
 import 'package:animate_do/animate_do.dart';
-import 'package:archeva_todo/core/base/view/base_view.dart';
-import 'package:archeva_todo/features/home/done/viewmodel/done_view_model.dart';
-import 'package:archeva_todo/core/extension/app_extensions.dart';
-import 'package:archeva_todo/product/components/container/day_container.dart';
-import 'package:archeva_todo/product/components/text/custom/custom_headline5.dart';
-import 'package:archeva_todo/product/components/text/custom/custom_headline6.dart';
+import '../../../../core/base/view/base_view.dart';
+import '../viewmodel/done_view_model.dart';
+import '../../../../core/extension/app_extensions.dart';
+import '../../../../product/components/container/day_container.dart';
+import '../../../../product/components/text/custom/custom_headline5.dart';
+import '../../../../product/components/text/custom/custom_headline6.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../product/components/linergradient/linear_gradient.dart';
-import '../../../../product/components/text/custom/custom_headline4.dart';
 
 class DoneView extends StatelessWidget {
   const DoneView({Key? key}) : super(key: key);

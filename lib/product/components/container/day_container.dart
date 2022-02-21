@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../linergradient/linear_gradient.dart';
-import 'package:archeva_todo/core/extension/app_extensions.dart';
+import '../../../core/extension/app_extensions.dart';
 
 import '../text/custom/custom_headline5.dart';
 import '../text/custom/custom_headline6.dart';
