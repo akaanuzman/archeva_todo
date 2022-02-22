@@ -6,6 +6,7 @@ class DoneViewModel extends BaseViewModel {
   final DateTime today = DateTime.now();
   late final DateTime yesterday;
   late final DateTime tomorrow;
+  late final DateTime nextDay;
 
   final DateFormat todayFormatter = DateFormat('MMMMd');
   final DateFormat abbrWeekDayFormatter = DateFormat('E');

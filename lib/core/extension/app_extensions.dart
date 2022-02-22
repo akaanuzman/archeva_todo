@@ -46,6 +46,8 @@ extension SizedBoxExtension on BuildContext {
   Widget get emptySizedWidthBoxLow3x => const SpaceSizedWidthBox(width: 0.03);
   Widget get emptySizedWidthBoxLow4x => const SpaceSizedWidthBox(width: 0.04);
   Widget get emptySizedWidthBoxNormal => const SpaceSizedWidthBox(width: 0.05);
+  Widget get emptySizedWidthBoxExtraNormal => const SpaceSizedWidthBox(width: 0.075);
+
   Widget get emptySizedWidthBoxHigh => const SpaceSizedWidthBox(width: 0.1);
 
   Widget get emptySizedHeightBoxExtraLow =>
@@ -308,3 +310,22 @@ extension DurationExtension on BuildContext {
   Duration get durationNormal => const Duration(seconds: 1);
   Duration get durationSlow => const Duration(seconds: 2);
 }
+
+
+  Color get primaryColor => const Color(0xffffb6c1);
+  Color get secondaryColor => const Color(0xFFECEEF5);
+
+  Color get pinkColor => const Color(0XFFF65A8A);
+  Color get pinkSecondaryColor => const Color(0XFFFF8DAF);
+  Color get blueColor => const Color(0XFF927BFB);
+  Color get blueSecondaryColor => const Color(0XFFAA95F5);
+  Color get orangeColor => const Color(0XFFFFAB46);
+  Color get orangeSecondaryColor => const Color(0XFFFFC179);
+  Color get aquaColor => const Color(0XFF4BC9EC);
+  Color get aquaSecondaryColor => const Color(0XFF85E3FC);
+  Color get softPink => const Color(0xffFFB8BF);
+  Color get greyColor => Colors.black26;
+  Color get white => Colors.white;
+
+  Color get softGreen => const Color(0xffe6f2e8);
+  Color get waterloo => const Color(0XFF7f83a3);

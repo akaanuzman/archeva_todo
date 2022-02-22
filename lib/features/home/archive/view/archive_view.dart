@@ -21,6 +21,7 @@ class ArchiveView extends StatelessWidget {
         },
         onPageBuilder: (BuildContext context, ArchiveViewModel viewModel) =>
             Scaffold(
+          backgroundColor: context.secondaryColor,
           body: viewModel.isEmptyTask
               ? FlipInY(
                   child: Center(
@@ -42,11 +43,12 @@ class ArchiveView extends StatelessWidget {
                 )
               : FlipInX(
                   child: ListView(
+                    shrinkWrap: true,
                     padding: context.padding16x,
                     children: [
                       context.emptySizedHeightBoxNormal,
                       CustomHeadline5(
-                        text: "Tamamlanan Görevler",
+                        text: "Arşivlenen Görevler",
                         context: context,
                         color: context.waterloo,
                       ),
@@ -54,28 +56,53 @@ class ArchiveView extends StatelessWidget {
                       CustomHeadline6(
                           text: viewModel.todayString, context: context),
                       context.emptySizedHeightBoxLow3x,
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          DayContainer(
-                            context: context,
-                            numDay: viewModel.yesterdayNumDay,
-                            weekDay: viewModel.yesterdayWeekDay,
-                          ),
-                          DayContainer(
-                            context: context,
-                            numDay: viewModel.todayNumDay,
-                            weekDay: viewModel.tomorrowWeekDay,
-                            firstColor: context.orangeSecondaryColor,
-                            seconDaryColor: context.orangeColor,
-                          ),
-                          DayContainer(
-                            context: context,
-                            numDay: viewModel.tomorrowNumDay,
-                            weekDay: viewModel.tomorrowWeekDay,
-                          ),
-                        ],
-                      )
+                      SizedBox(
+                        height: context.dynamicHeight(0.185),
+                        child: ListView.separated(
+                          padding: context.padding8x,
+                          scrollDirection: Axis.horizontal,
+                          separatorBuilder: (context, index) =>
+                              context.emptySizedWidthBoxHigh,
+                          itemCount: viewModel.daysNumDay.length,
+                          itemBuilder: (context, index) =>
+                              viewModel.daysNumDay[index] ==
+                                      viewModel.todayNumDay
+                                  ? DayContainer(
+                                      context: context,
+                                      numDay: viewModel.todayNumDay,
+                                      weekDay: viewModel.todayWeekDay,
+                                      firstColor: context.orangeSecondaryColor,
+                                      seconDaryColor: context.orangeColor,
+                                    )
+                                  : DayContainer(
+                                      context: context,
+                                      numDay: viewModel.daysNumDay[index],
+                                      weekDay: viewModel.daysWeekDay[index],
+                                    ),
+                        ),
+                      ),
+                      // Row(
+                      //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      //   children: [
+                      //     DayContainer(
+                      //       context: context,
+                      //       numDay: viewModel.yesterdayNumDay,
+                      //       weekDay: viewModel.yesterdayWeekDay,
+                      //     ),
+                      //     DayContainer(
+                      //       context: context,
+                      //       numDay: viewModel.todayNumDay,
+                      //       weekDay: viewModel.tomorrowWeekDay,
+                      //       firstColor: context.orangeSecondaryColor,
+                      //       seconDaryColor: context.orangeColor,
+                      //     ),
+                      //     DayContainer(
+                      //       context: context,
+                      //       numDay: viewModel.tomorrowNumDay,
+                      //       weekDay: viewModel.tomorrowWeekDay,
+                      //     ),
+                      //   ],
+                      // )
                     ],
                   ),
                 ),
