@@ -81,28 +81,6 @@ class ArchiveView extends StatelessWidget {
                                     ),
                         ),
                       ),
-                      // Row(
-                      //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      //   children: [
-                      //     DayContainer(
-                      //       context: context,
-                      //       numDay: viewModel.yesterdayNumDay,
-                      //       weekDay: viewModel.yesterdayWeekDay,
-                      //     ),
-                      //     DayContainer(
-                      //       context: context,
-                      //       numDay: viewModel.todayNumDay,
-                      //       weekDay: viewModel.tomorrowWeekDay,
-                      //       firstColor: context.orangeSecondaryColor,
-                      //       seconDaryColor: context.orangeColor,
-                      //     ),
-                      //     DayContainer(
-                      //       context: context,
-                      //       numDay: viewModel.tomorrowNumDay,
-                      //       weekDay: viewModel.tomorrowWeekDay,
-                      //     ),
-                      //   ],
-                      // )
                     ],
                   ),
                 ),
